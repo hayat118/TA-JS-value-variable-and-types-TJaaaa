@@ -16,6 +16,18 @@ var amount = 0;
 // your code goes here
 
 // ⛑ Answer of the above will `$334.76`.
-for(let i=0; i<=SPENDING_THRESHOLD; i=i+1){
-  
+while(amount< bank_balance){
+  amount=amount+PHONE_PRICE;
+  if(amount<SPENDING_THRESHOLD){
+    amount=amount+ACCESSORY_PRICE;
+  }
+}
+let tax=amount*TAX_RATE;
+let taxedamount=amount+tax
+console.log(`$${taxedamount}`);
+ 
+if(taxedamount<bank_balance){
+  console.log(`you can afford it`)
+}else{
+  console.log(`you can't afford buying phone!`)
 }
