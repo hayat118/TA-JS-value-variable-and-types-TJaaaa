@@ -16,3 +16,6 @@ var amount = 0;
 // your code goes here
 
 // ⛑ Answer of the above will `$334.76`.
+for(let i=0; i<=SPENDING_THRESHOLD; i=i+1){
+  
+}
